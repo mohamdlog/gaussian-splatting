@@ -3,18 +3,23 @@ channels:
   - pytorch
   - conda-forge
   - defaults
+  - nvidia
 dependencies:
-  - cudatoolkit=11.6
+  - cudatoolkit=11.7
   - plyfile
   - python=3.7.13
   - pip=22.3.1
-  - pytorch=1.12.1
-  - torchaudio=0.12.1
-  - torchvision=0.13.1
+  - pytorch=1.13.1
+  - torchaudio=0.13.1
+  - torchvision=0.14.1
   - tqdm
+  - ninja
+  - gcc_linux-64=10
+  - gxx_linux-64=10
+  - libxcrypt
+  - cuda-cudart-dev=11.7
+  - cuda-nvcc=11.7
+  - cuda-cccl=11.7
   - pip:
-    - submodules/diff-gaussian-rasterization
-    - submodules/simple-knn
-    - submodules/fused-ssim
     - opencv-python
     - joblib
